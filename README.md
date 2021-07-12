@@ -1,1 +1,1 @@
-git clone --bare <git-repo-url> $HOME/.cfg
+git clone --bare https://github.com/y00j/.cfg.git $HOME/.cfg
