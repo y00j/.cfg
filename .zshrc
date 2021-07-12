@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/yujiezhu/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -70,7 +70,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
- plugins=(git python osx zsh-syntax-highlighting)
+ plugins=(git python osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,9 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
 # Install vscode in path"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
-alias config='/usr/bin/git --git-dir=/Users/yujiezhu/.cfg/ --work-tree=/Users/yujiezhu'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
