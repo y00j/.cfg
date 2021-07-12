@@ -1,1 +1,0 @@
-/Users/yujiezhu/.dotfiles/.zshrc
